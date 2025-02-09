@@ -1,7 +1,24 @@
 public abstract class Pieza {
 
-    String color;
-    
+    private String color;
+    protected String nombre;
 
+    public Pieza(String color) {
+        this.color = color;
+    }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public abstract boolean validoMovimiento(Movimiento movimiento);
+
+    @Override
+    public String toString() {
+        return "Pieza{" + "color=" + color + ", nombre=" + nombre + '}';
+    }
 }
