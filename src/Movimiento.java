@@ -22,19 +22,23 @@ public class Movimiento {
         return false;
     }
 
-    public boolean esDiagonal(){
-        if {
+    public boolean esDiagonal(){ //absoluto
+        if(Math.abs(saltoHorizontal())==Math.abs(saltoVertical())) {
             return true;
         }
-        return false;
+            return false;
     }
 
-    public int saltoHorizontal(){       //
-
+    public int saltoHorizontal(){ //signos
+        int salto;
+        salto = posFinal.getColumna() - posInicial.getColumna();
+        return salto;
     }
 
     public int saltoVertical(){
-
+        int salto;
+        salto = posFinal.getFila() - posInicial.getFila();
+        return salto;
     }
 
 }

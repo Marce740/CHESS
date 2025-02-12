@@ -9,9 +9,9 @@ public class Juego {
 
         }
 
-        public String jugada(String jugada, Tablero tablero){
+     /*   public String jugada(String jugada, Tablero tablero){
 
-        }
+        } */
         //Si la jugada introducida por el usuario es correcta inicializa el atributo movimiento de la jugada actual y devuelve un String a null. En el caso contrario, devuelve el mensaje a mostrar al usuario en caso de haber introducido una jugada incorrecta.
 
 }

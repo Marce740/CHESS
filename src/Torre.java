@@ -9,7 +9,7 @@ public class Torre extends Pieza{
 
     }
 
-    public boolean validoMovimiento (Movimiento mov) {
+    public boolean validoMovimiento (Movimiento mov, Tablero tablero) {
         boolean respuesta = false;
         if (mov.esVertical() || mov.esHorizontal())
             respuesta = true;

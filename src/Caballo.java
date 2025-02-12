@@ -9,9 +9,11 @@ public class Caballo extends Pieza{
 
     }
 
-    public boolean validoMovimiento(Movimiento mov){
+    public boolean validoMovimiento(Movimiento mov, Tablero tablero){
         boolean respuesta = false;
-        if(mov.)
+        if(mov.esVertical() || mov.esHorizontal())
+            respuesta = true;
+        return respuesta;
     }
 
 }

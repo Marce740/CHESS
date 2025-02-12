@@ -15,7 +15,7 @@ public abstract class Pieza {
         this.nombre = nombre;
     }
 
-    public abstract boolean validoMovimiento(Movimiento movimiento);
+    public abstract boolean validoMovimiento(Movimiento movimiento, Tablero tablero);
 
     @Override
     public String toString() {

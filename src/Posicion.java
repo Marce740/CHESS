@@ -29,10 +29,11 @@ public class Posicion {
         this.columna = columna;
     }
 
+    /*
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Fila"+ fila);
-        sb.append("Fila"+ fila);
+        sb.append("Columna"+ fila);
     }
-
+*/
 }
