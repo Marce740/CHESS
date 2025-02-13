@@ -3,6 +3,11 @@ public abstract class Pieza {
     private String color;
     protected String nombre;
 
+    /**
+     *
+     * @param color
+     */
+
     public Pieza(String color) {
         this.color = color;
     }
@@ -16,6 +21,11 @@ public abstract class Pieza {
     }
 
     public abstract boolean validoMovimiento(Movimiento movimiento, Tablero tablero);
+
+    /**
+     *
+     * @return
+     */
 
     @Override
     public String toString() {

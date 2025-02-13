@@ -1,5 +1,10 @@
 public class Rey extends Pieza{
 
+    /**
+     *
+     * @param color
+     */
+
     public Rey(String color){
         super(color);
         if (color.equals("B")) //B ES DE BLACK

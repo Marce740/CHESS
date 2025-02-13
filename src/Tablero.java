@@ -2,6 +2,10 @@ public class Tablero {
 
     private Pieza[][] tablero;
 
+    /**
+     *
+     */
+
     public Tablero() {
         tablero = new Pieza[8][8];
 
@@ -23,6 +27,10 @@ public class Tablero {
         tablero [7][6] = new Caballo("W");
         tablero [7][7] = new Torre("W");
 
+        /*
+        Esto especificamente para los peones
+         */
+
         for (int i = 0; i < 8; i++) {
             tablero [1][i] = new Peon("B");
         }
@@ -34,6 +42,9 @@ public class Tablero {
 
     }
 
+    /**
+     *
+     */
     public void pintarTablero() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
@@ -48,9 +59,22 @@ public class Tablero {
         }
     }
 
+    /**
+     *
+     * @param fila
+     * @param columna
+     * @return
+     */
+
     public boolean hayPieza(int fila,int columna){
         return tablero[fila][columna]!=null;
     }
+
+    /**
+     *
+     * @param pos
+     * @return
+     */
     public boolean hayPieza(Posicion pos){
         return hayPieza(pos.getFila(),pos.getColumna());
     }

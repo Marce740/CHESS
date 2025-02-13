@@ -1,5 +1,10 @@
 public class Caballo extends Pieza{
 
+    /**
+     *
+     * @param color
+     */
+
     public Caballo(String color){
         super(color);
         if (color.equals("B")) //B ES DE BLACK

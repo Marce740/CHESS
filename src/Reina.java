@@ -1,5 +1,10 @@
 public class Reina extends Pieza{
 
+
+    /**
+     *
+     * @param color
+     */
     public Reina(String color){
         super(color);
         if (color.equals("B")) //B ES DE BLACK

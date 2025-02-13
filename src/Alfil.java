@@ -1,4 +1,10 @@
 public class Alfil extends Pieza{
+
+    /**
+     *
+     * @param color
+     */
+
     public Alfil(String color){
         super(color);
         if (color.equals("B")) //B es de BLACK
