@@ -3,6 +3,10 @@ public class Movimiento {
     Posicion posInicial;
     Posicion posFinal;
 
+    public Movimiento(){
+        posInicial = new Posicion(0,0);
+        posFinal = new Posicion(0,0);
+    }
 
     /**
      *
