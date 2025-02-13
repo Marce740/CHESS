@@ -1,3 +1,7 @@
+/**
+ * Padre de las piezas, determinará el "color" y nombre
+ */
+
 public abstract class Pieza {
 
     private String color;

@@ -5,7 +5,7 @@
 public class Torre extends Pieza{
 
     /**
-     *
+     * utilizamos "color" para ubicar la pieza, B:black, else: white
      * @param color
      */
     public Torre(String color){
@@ -18,7 +18,7 @@ public class Torre extends Pieza{
     }
 
     /**
-     *
+     * verifica el movimiento para la torre y que corresponde como "valido"
      * @param mov
      * @param tablero
      * @return

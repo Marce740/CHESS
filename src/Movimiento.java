@@ -1,7 +1,15 @@
+/**
+ * Clase para determinar los movimientos de las piezas de acuerdo a la posicion
+ */
+
 public class Movimiento {
 
     Posicion posInicial;
     Posicion posFinal;
+
+    /**
+     * inicializando movimiento
+     */
 
     public Movimiento(){
         posInicial = new Posicion(0,0);
@@ -20,7 +28,7 @@ public class Movimiento {
 
 
     /**
-     *
+     * si el movimiento fue vertical, comparando las posiciones
      * @return
      */
     public boolean esVertical(){
@@ -31,7 +39,7 @@ public class Movimiento {
     }
 
     /**
-     *
+     * determina si el movimiento fue horizontal, comparando las posiciones
      * @return
      */
     public boolean esHorizontal(){
@@ -43,7 +51,7 @@ public class Movimiento {
 
 
     /**
-     *
+     * si el movimiento fue en diagonal, comparando los saltos, tanto horizontal como vertical, con un absoluto
      * @return
      */
     public boolean esDiagonal(){ //absoluto
@@ -55,7 +63,7 @@ public class Movimiento {
 
 
     /**
-     *
+     *  aqui nos devuelve el int del salto ejecutado en horizontal
      * @return
      */
     public int saltoHorizontal(){ //signos
@@ -66,7 +74,7 @@ public class Movimiento {
 
 
     /**
-     *
+     * devuelve el int del salto ejecutado en vertical
      * @return
      */
     public int saltoVertical(){

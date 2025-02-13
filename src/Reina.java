@@ -1,8 +1,12 @@
+/**
+ * Hereda de Pieza
+ */
+
 public class Reina extends Pieza{
 
 
     /**
-     *
+     * utilizamos "color" para ubicar la pieza, B:black, else: white
      * @param color
      */
     public Reina(String color){

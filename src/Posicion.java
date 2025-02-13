@@ -1,3 +1,8 @@
+/**
+ * Se utilizará para clase movimiento, se determina con fila y columna
+ */
+
+
 public class Posicion {
 
     /**
@@ -19,7 +24,7 @@ public class Posicion {
 
 
     /**
-     *
+     * posicion default
      */
     public Posicion() {
         fila = 0;
@@ -27,7 +32,7 @@ public class Posicion {
     }
 
     /**
-     *
+     * constructor
      * @return
      */
 
@@ -36,7 +41,7 @@ public class Posicion {
     }
 
     /**
-     *
+     * set
      * @param fila
      */
 
@@ -45,7 +50,7 @@ public class Posicion {
     }
 
     /**
-     *
+     * constructor
      * @return
      */
 
@@ -54,7 +59,7 @@ public class Posicion {
     }
 
     /**
-     *
+     * set
      * @param columna
      */
 
@@ -63,13 +68,13 @@ public class Posicion {
     }
 
     /**
-     *
+     * devuelve string de fila y columna
       * @return
      */
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Fila"+ fila);
-        sb.append("Columna"+ fila);
+        sb.append("Columna"+ columna);
     }
 
 }

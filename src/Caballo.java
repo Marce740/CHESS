@@ -1,7 +1,11 @@
+/**
+ * Hereda de Pieza
+ */
+
 public class Caballo extends Pieza{
 
     /**
-     *
+     * utilizamos "color" para ubicar la pieza, B:black, else: white
      * @param color
      */
 

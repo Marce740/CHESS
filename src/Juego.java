@@ -1,4 +1,10 @@
+/**
+ * se van a determinar los turnos y las jugadas
+ */
+
 public class Juego {
+
+
         private int elTurno; //0->Negras 1->Blancas //Boolean o String o char
 
         public Movimiento getMov() {

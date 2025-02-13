@@ -1,9 +1,13 @@
+/**
+ * se determinará las piezas en el tablero
+ */
+
 public class Tablero {
 
     private Pieza[][] tablero;
 
     /**
-     *
+     * Configurando tablero con array para peones
      */
 
     public Tablero() {
@@ -43,7 +47,7 @@ public class Tablero {
     }
 
     /**
-     *
+     * Permite ubicar las figuras en el tablero
      */
     public void pintarTablero() {
         for (int i = 0; i < 8; i++) {
@@ -60,7 +64,7 @@ public class Tablero {
     }
 
     /**
-     *
+     * determina si hay una pieza de acyuerdo afila y columna
      * @param fila
      * @param columna
      * @return
@@ -71,15 +75,19 @@ public class Tablero {
     }
 
     /**
-     *
+     * determina la pieza de acuerdo a la posicion
      * @param pos
      * @return
      */
     public boolean hayPieza(Posicion pos){
         return hayPieza(pos.getFila(),pos.getColumna());
     }
-    /*public boolean hayPiezasEntre(Movimiento mov){
-    }*/
+
+
+    public boolean hayPiezasEntre(Movimiento mov){
+    }
+
+
     public void ponPieza(Pieza figura, int fila, int columna){
         tablero[fila][columna]=figura;
     }
