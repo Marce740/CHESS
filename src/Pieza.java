@@ -1,4 +1,4 @@
-/**
+º/**
  * Padre de las piezas, determinará el "color" y nombre
  */
 

@@ -13,6 +13,9 @@ public class Main {
 
         do {
             tablero.pintarTablero();
+            System.out.println("Digite su jugada: ");
+
+
         }while(lector.hasNextLine());
     }
 }

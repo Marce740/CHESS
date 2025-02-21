@@ -6,6 +6,8 @@ public class Juego {
 
 
         private int elTurno; //0->Negras 1->Blancas //Boolean o String o char
+        public Movimiento movimiento;
+
 
         public Movimiento getMov() {
                 return mov;
@@ -31,7 +33,11 @@ public class Juego {
          * @param tablero
          * @return
          */
-        public String jugada(String jugada, Tablero tablero){
+        public String validarJugada(String jugada, Tablero tablero){ /* aqui se pone el menu*/
+
+                String menu=null;
+
+
 
         }
 
