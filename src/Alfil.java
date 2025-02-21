@@ -5,8 +5,8 @@
 public class Alfil extends Pieza{
 
     /**
-     * utilizamos "color" para ubicar la pieza, B:black, else: white
-     * @param color
+     *
+     * @param color: define la imagen de pieza, B:black, else: white
      */
 
     public Alfil(String color){
