@@ -4,8 +4,8 @@
 
 public class Juego {
 
-
         private int elTurno; //0->Negras 1->Blancas //Boolean o String o char
+        private Movimiento mov;//el movimiento en la jugada actual
 
         public Movimiento getMov() {
                 return mov;
@@ -15,7 +15,7 @@ public class Juego {
                 this.mov = mov;
         }
 
-        private Movimiento mov;//el movimiento en la jugada actual
+
 
         public int getTurno(){
             return elTurno;
@@ -31,8 +31,12 @@ public class Juego {
          * @param tablero
          * @return
          */
+
+
         public String jugada(String jugada, Tablero tablero){
 
         }
+
+
 
 }

@@ -71,10 +71,13 @@ public class Posicion {
      * devuelve string de fila y columna
       * @return
      */
+
+    /*
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Fila"+ fila);
         sb.append("Columna"+ columna);
     }
+*/
 
 }

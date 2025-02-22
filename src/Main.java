@@ -13,6 +13,9 @@ public class Main {
 
         do {
             tablero.pintarTablero();
+            System.out.println("Introduce jugada");
+            lector.nextLine();
+
         }while(lector.hasNextLine());
     }
 }

@@ -4,11 +4,17 @@
 
 public class Tablero {
 
+    /**
+     * matriz (array bidimensional) de objetos de tipo Pieza
+     */
+
     private Pieza[][] tablero;
 
     /**
      * Configurando tablero con array para peones
      */
+
+
 
     public Tablero() {
         tablero = new Pieza[8][8];
@@ -64,7 +70,7 @@ public class Tablero {
     }
 
     /**
-     * determina si hay una pieza de acyuerdo afila y columna
+     * determina si hay una pieza de acuerdo a fila y columna
      * @param fila
      * @param columna
      * @return
@@ -75,7 +81,7 @@ public class Tablero {
     }
 
     /**
-     * determina la pieza de acuerdo a la posicion
+     * determina si hay una pieza de acuerdo a la posicion
      * @param pos
      * @return
      */
@@ -83,30 +89,56 @@ public class Tablero {
         return hayPieza(pos.getFila(),pos.getColumna());
     }
 
-
-    public boolean hayPiezasEntre(Movimiento mov){
-    }
-
+    /**
+     * Se utiliza para mover o colocar nuevas piezas en el tablero despues de la inicializacion
+     * @param figura la figura correspondiente a la fila y columna
+     * @param fila
+     * @param columna
+     */
 
     public void ponPieza(Pieza figura, int fila, int columna){
         tablero[fila][columna]=figura;
     }
 
-    public void ponPieza(Pieza figura, Posicion Pos){
+    /**
+     * Reemplazará la pieza de acuerdo a la posicion basicamente
+     * @param figura
+     * @param pos
+     */
+
+    public void ponPieza(Pieza figura, Posicion pos){
+        tablero[pos.getFila()][pos.getColumna()] = figura;
 
     }
-    public void quitaPieza(int fila,int columna){
 
+    /**
+     * Al quitar la pieza debe dejar el espacio del array como nulo
+     * @param fila
+     * @param columna
+     */
+    public void quitaPieza(int fila,int columna){
+        tablero[fila][columna]=null;
     }
     public void quitaPieza(Posicion pos){
-
-
+        quitaPieza(pos.getFila(),pos.getColumna());
     }
+
+    /**
+     * nos dice la pieza que tenemos en esa fila, columna  y en el otro metodo de posicion
+     * @param fila
+     * @param columna
+     * @return
+     */
+
     public Pieza devuelvePieza(int fila,int columna){
         return tablero[fila][columna];
     }
     public Pieza devuelvePieza(Posicion pos){
         return devuelvePieza(pos.getFila(),pos.getColumna());
+
     }
 
+    public boolean hayPiezasEntre(Movimiento mov){
+
+    }
 }
