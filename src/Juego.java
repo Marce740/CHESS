@@ -33,10 +33,10 @@ public class Juego {
          */
 
 
-        public String jugada(String jugada, Tablero tablero){
+/*        public String jugada(String jugada, Tablero tablero){
 
         }
-
+*/
 
 
 }

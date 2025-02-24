@@ -138,7 +138,9 @@ public class Tablero {
 
     }
 
+    /*
     public boolean hayPiezasEntre(Movimiento mov){
 
     }
+     */
 }
