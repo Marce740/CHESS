@@ -77,6 +77,7 @@ public class Posicion {
         StringBuilder sb = new StringBuilder();
         sb.append("Fila"+ fila);
         sb.append("Columna"+ columna);
+        return sb.toString();
     }
 */
 
