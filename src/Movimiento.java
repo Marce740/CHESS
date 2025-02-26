@@ -4,8 +4,25 @@
 
 public class Movimiento {
 
+
+
     Posicion posInicial;
+
+
+
     Posicion posFinal;
+
+    /**
+     * metodo get
+     * @return
+     */
+    public Posicion getPosInicial() {
+        return posInicial;
+    }
+
+    public Posicion getPosFinal() {
+        return posFinal;
+    }
 
     /**
      * inicializando movimiento

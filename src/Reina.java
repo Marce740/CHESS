@@ -20,7 +20,6 @@ public class Reina extends Pieza{
     @Override
     public boolean validoMovimiento(Movimiento movimiento, Tablero tablero) {
 
-
-        return false;
+        return movimiento.esVertical() || movimiento.esHorizontal() || movimiento.esDiagonal(); //la reina posee todo xd
     }
 }

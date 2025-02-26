@@ -1,16 +1,18 @@
-º/**
- * Padre de las piezas, determinará el "color" y nombre
- */
-
 public abstract class Pieza {
 
-    private String color;
+
+
+    protected String color;
     protected String nombre;
 
     /**
      *
      * @param color
      */
+
+    public String getColor() {
+        return color;
+    }
 
     public Pieza(String color) {
         this.color = color;

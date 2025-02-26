@@ -7,15 +7,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Tablero tablero = new Tablero();
+        Juego juego = new Juego();
+        juego.iniciarJuego();
 
-        Scanner lector = new Scanner(System.in);
-
-        do {
-            tablero.pintarTablero();
-            System.out.println("Introduce jugada");
-            lector.nextLine();
-
-        }while(lector.hasNextLine());
     }
 }

@@ -5,7 +5,7 @@
 public class Rey extends Pieza{
 
     /**
-     * utilizamos "color" para ubicar la pieza, B:black, else: white
+     * Utilizamos "color" para ubicar la pieza, B:black, else: white
      * @param color
      */
 
@@ -19,6 +19,10 @@ public class Rey extends Pieza{
 
     @Override
     public boolean validoMovimiento(Movimiento movimiento, Tablero tablero) {
-        return false;
+        int movcol=movimiento.saltoHorizontal();
+        int movfil=movimiento.saltoVertical();
+        //solo es un espacio
+        return (movcol == 1 && movfil == 1) || (movcol == 1) || (movfil == 1);
+
     }
 }
